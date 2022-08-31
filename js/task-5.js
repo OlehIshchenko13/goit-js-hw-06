@@ -4,17 +4,13 @@
 // <input type="text" id="name-input" placeholder="Please enter your name" />
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
+const inputRef = document.querySelector('#name-input')
+const outputRef = document.querySelector('#name-output')
 
+inputRef.addEventListener('input', event => {
+	outputRef.textContent = event.target.value
 
-
-let inputRef = document.querySelector('#name-input');
-inputRef.addEventListener('input', onInputChange);
-
-let outputRef = document.querySelector('#name-output');
-
-function onInputChange(event) {
-  inputRef = event.currentTarget.value;
-  
-
-  inputRef !== ' ' ? (outputRef.innerText = inputRef) : 'Anonymous';
-}
+	if (event.target.value === '') {
+		outputRef.textContent = 'Anonymous'
+	}
+})
