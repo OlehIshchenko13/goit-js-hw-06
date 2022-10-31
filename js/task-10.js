@@ -36,4 +36,5 @@ refs.destroyBoxBTN.addEventListener('click',onDestroyBoxBTN)
 
 function onDestroyBoxBTN(e) {
   refs.baseBox.innerHTML='';
+  size = 20
 }
