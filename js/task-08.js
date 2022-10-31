@@ -13,12 +13,16 @@ const refs = {
         const password = elementCurrentTargeget.password.value
          if(email === ''|| password ===''){
             alert('заполни форму')
+        }else{
+           const formData =  {
+            email,password,
+            
+        } 
+        console.log(formData);
         }
-        const formData =  {
-            email,password
-        }
+        
        e.currentTarget.reset()
         
-        console.log(formData);
+        
     }
     

@@ -2,7 +2,7 @@ const refs = {
     fontSizeControl:  document.querySelector('#font-size-control'),
     text:  document.querySelector('#text'),
 }
-refs.fontSizeControl.addEventListener('change',onChangeFontSize)
+refs.fontSizeControl.addEventListener('imput',onChangeFontSize)
 
 function onChangeFontSize (e){
    
