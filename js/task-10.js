@@ -11,10 +11,10 @@ const refs = {
 }
 
 refs.createBoxBTN.addEventListener('click',onCreateBox)
-
+let size = 20;
 function onCreateBox(e){
   const amountBox = refs.amount.value;
-   let size = 20;
+   
    const arrayBox =[];
 
   function makeBox (size){
