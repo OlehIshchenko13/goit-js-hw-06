@@ -12,7 +12,7 @@ function onSubmitForm(e) {
    const email = elementCurrentTargeget.email.value;
    const password = elementCurrentTargeget.password.value;
    
-   if (email === '' && password === '') {
+   if (email === '' || password === '') {
       alert('заполни форму');
       return;
    } else {
