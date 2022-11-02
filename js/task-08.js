@@ -14,14 +14,14 @@ function onSubmitForm(e) {
    
    if (!email || !password) {
       alert('заполни форму');
-      
-   } else {
+     return 
+   } 
       const formData = {
          email,
          password,
-      };
+      }
       console.log(formData);
-      
+      e.currentTarget.reset();
    }
-   e.currentTarget.reset();
-}
+   
+
